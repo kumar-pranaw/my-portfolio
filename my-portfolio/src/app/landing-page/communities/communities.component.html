@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="container-fluid text-center">
+        <p class="section-title google-sans-regular">My Communities</p>
+        <p class="section-content google-sans-regular">Awesome organizations & communites I am a part of</p>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-4 text-light mb-4" *ngFor="let community of communities">
+                <div class="card bg-transparent">
+                    <img class="card-img-top" src="{{ community.communityLogo }}" alt="{{ community.communityName }}">
+                    <div class="card-body mb-0 p-0">
+                        <p class="card-title google-sans-regular">{{ community.communityName }}</p>
+                        <p class="card-text google-sans-regular">{{ community.communityDescription }}</p>
+                        <a href="{{ community.communityLink }}" class="btn btn-outline-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

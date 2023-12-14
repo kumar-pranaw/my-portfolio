@@ -1,0 +1,32 @@
+.card-title {
+    font-size: 150%;
+}
+
+.card {
+    border: 1px solid #ffffff16;
+    padding: 5%;
+    height: 100%;
+}
+
+.card-img-top {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5%;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+.card-img-top:hover{
+    filter: brightness(1) invert(0);
+}
+
+.card-text {
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.btn .btn-primary {
+    background-color: #000 !important;
+}

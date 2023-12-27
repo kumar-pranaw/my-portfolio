@@ -1,0 +1,19 @@
+.accordion-item {
+    background-color: #00000000 !important;
+    /* border-top: 1px solid #ffffff12 !important; */
+    border-bottom: 1px solid #ffffff12 !important;
+    padding: 2.5%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.accordion-body {
+    border-right: 1px solid #ffffff12 !important;
+}
+.accordion-header button{
+    font-size: 75% !important;
+    padding-left: 0px !important;
+}
+ul li{
+    list-style: none;
+}

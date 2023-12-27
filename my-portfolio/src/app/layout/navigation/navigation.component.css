@@ -32,24 +32,22 @@ i {
 
 .nav-link {
   display: flex;
+  flex-direction: column;
   align-items: center;
   height: 5rem;
   justify-content: center;
   color: var(--text-primary);
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
 }
 
 .nav-link:hover {
-  filter: grayscale(0%) opacity(1);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
+  color: #cc2b38 !important;
 }
 
 .link-text {
-  display: none;
-  margin-left: 1rem;
+  font-size: 90%;
+  text-transform: uppercase;
 }
 
 .nav-link svg {
@@ -59,11 +57,11 @@ i {
 }
 
 .fa-primary {
-  color: #ff7eee;
+  color: #cc2b38;
 }
 
 .fa-secondary {
-  color: #df49a6;
+  color: #cc2b38;
 }
 
 .fa-primary,
@@ -85,13 +83,6 @@ i {
 
 .logo svg {
   transform: rotate(0deg);
-  transition: var(--transition-speed);
-}
-
-.logo-text {
-  display: inline;
-  position: absolute;
-  left: -999px;
   transition: var(--transition-speed);
 }
 
@@ -138,8 +129,8 @@ i {
 }
 
 .dark {
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
+  --text-primary: #cc2b38;
+  --text-secondary: #cc2b38;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
 }
@@ -147,7 +138,7 @@ i {
 .light {
   --text-primary: #1f1f1f;
   --text-secondary: #000000;
-  --bg-primary: #ffffff;
+  --bg-primary: #cc2b38;
   --bg-secondary: #e4e4e4;
 }
 

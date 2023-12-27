@@ -1,76 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
 
+body {
+  overflow: visible;
+}
 
 @font-face {
-    font-family: 'google-sans-regular';
-    src: url(assets/fonts/GoogleSansDisplay-Regular.ttf);
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'google-sans-bold';
-    src: url(assets/fonts/GoogleSansDisplay-Bold.ttf);
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'soul-signature';
-    src: url(assets/fonts/Soul\ Signature.ttf);
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'incompleta';
-    src: url(assets/fonts/IncompleetaRegular.ttf);
-    font-display: swap;
-  }
-  
-  .google-sans-regular {
-    font-family: google-sans-regular;
-  }
-  
-  .google-sans-bold {
-    font-family: google-sans-bold;
-  }
-  
-  .soul-signature {
-    font-family: soul-signature;
-  }
-  
-  .incompleta {
-    font-family: incompleta;
-  }
-  
-  body {
-    font-family: "Montserrat" !important;
-  }
-  
+  font-family: 'google-sans-regular';
+  src: url(assets/fonts/GoogleSansDisplay-Regular.ttf);
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'google-sans-bold';
+  src: url(assets/fonts/GoogleSansDisplay-Bold.ttf);
+  font-display: swap;
+}
 
-:root{
-    font-size: 16px;
-    font-family: google-sans-regular;
+@font-face {
+  font-family: 'soul-signature';
+  src: url(assets/fonts/Soul\ Signature.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'incompleta';
+  src: url(assets/fonts/IncompleetaRegular.ttf);
+  font-display: swap;
+}
+
+.google-sans-regular {
+  font-family: google-sans-regular;
+}
+
+.google-sans-bold {
+  font-family: google-sans-bold;
+}
+
+.soul-signature {
+  font-family: soul-signature;
+}
+
+.incompleta {
+  font-family: incompleta;
 }
 
 body {
-    background-color: #0f0f11;
-    color: white;
+  font-family: "Montserrat" !important;
 }
+
+
+
+:root {
+  font-size: 16px;
+  font-family: google-sans-regular;
+}
+
+body {
+  background-color: #0f0f11;
+  color: white;
+}
+
 main {
   margin-left: 8rem;
   padding: 1rem;
-  overflow: hidden;
+  overflow: hidden !important;
 }
-.section-title{
+
+.section-title {
   font-size: 200%;
   line-height: 40px;
 }
-.section-content{
+
+.section-content {
   font-size: 16px;
 }
-.primary-button{
+
+.primary-button {
   background-color: #cc2b3800;
   border: 1px #cc2b38 solid;
   color: #cc2b38;
 }
 
+.red-color {
+  color: #cc2b38;
+}

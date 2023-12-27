@@ -7,42 +7,13 @@
             Come And Join Me At Some Of The Very Interesting Sessions
         </p>
     </div>
-    <!-- Display myWorkshops -->
-    <div class="row">
-        <div class="col-lg-3 mb-4" *ngFor="let workshop of topWorkshops">
-            <div class="card bg-transparent">
-                <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
-                    <img [src]="workshop.workshopImage[0]" alt="{{ workshop.workshopName }}" class="img-fluid card-img-top" />
-                    <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <p class="event-type">
-                        Workshop
-                    </p>
-                    <h5 class="card-title">{{ workshop.workshopName }}</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    
-                    <a href="#!" class="btn btn-outline-light btn-sm">Know More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
     <!-- Display mySessions -->
     <div class="row">
         <div class="col-lg-3 mb-4" *ngFor="let session of topSessions">
             <div class="card bg-transparent">
                 <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
-                    <img [src]="session.sessionImage[0]" alt="{{ session.sessionName }}" class="img-fluid card-img-top" />
+                    <img [src]="session.sessionImage[0]" alt="{{ session.sessionName }}"
+                        class="img-fluid card-img-top" />
                     <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                     </a>
@@ -53,13 +24,12 @@
                     </p>
                     <h5 class="card-title">{{ session.sessionName }}</h5>
                     <p class="card-text">{{session.sessionDescription}}</p>
-                    
+
                     <a href="#!" class="btn btn-outline-light btn-sm">Know More</a>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Display myHackathons -->
     <div class="row">
         <div class="col-lg-3 mb-4" *ngFor="let hackathon of topHackathons">
@@ -76,7 +46,32 @@
                     </p>
                     <h5 class="card-title">{{ hackathon.hackathonName }}</h5>
                     <p class="card-text">{{ hackathon.hackathonDetails }}</p>
-                    
+
+                    <a href="#!" class="btn btn-outline-light btn-sm">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Display myWorkshops -->
+    <div class="row">
+        <div class="col-lg-3 mb-4" *ngFor="let workshop of topWorkshops">
+            <div class="card bg-transparent">
+                <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
+                    <img [src]="workshop.workshopImage[0]" alt="{{ workshop.workshopName }}"
+                        class="img-fluid card-img-top" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="event-type">
+                        Workshop
+                    </p>
+                    <h5 class="card-title">{{ workshop.workshopName }}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+
                     <a href="#!" class="btn btn-outline-light btn-sm">Know More</a>
                 </div>
             </div>

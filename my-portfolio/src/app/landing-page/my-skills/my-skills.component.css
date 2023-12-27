@@ -11,7 +11,7 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.6s;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff16;
     border-radius: 15px;
     padding: 10%;
   }
@@ -43,7 +43,6 @@
     transform: rotateY(180deg);
     display: none;
     background-color: #0f0f11;
-    border-left: rgb(188, 0, 0) 3px solid;
   }
   
   .card:hover .card-front{

@@ -1,4 +1,5 @@
-<div class="container-fluid">
+<section class="my-articles">
+  <div class="container-fluid">
     <div class="row">
         <p class="section-title">
             My Articles
@@ -8,14 +9,15 @@
         </p>
     </div>
     <div class="row">
-      <div class="col-md-4 mb-4" *ngFor="let item of rssFeedItems">
-        <div class="card bg-transparent">
-          <img class="card-img-top" [src]="item.thumbnail" alt="{{ item.title }}" width="100%">
+      <div class="col-lg-3 col-md-6 mb-4" *ngFor="let item of rssFeedItems">
+        <div class="card bg-transparent article-card">
+          <!-- <img class="card-img-top" [src]="item.thumbnail" alt="{{ item.title }}" width="100%"> -->
           <div class="card-body">
             <h5 class="card-title">{{ item.title }}</h5>
-            <a href="{{ item.link }}" class="btn btn-primary" target="_blank">Read More</a>
+            <a href="{{ item.link }}" class="custom-link" target="_blank">Read More <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </div>
   </div>
+</section>

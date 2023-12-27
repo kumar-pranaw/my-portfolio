@@ -1,19 +1,48 @@
-.accordion-item {
-    background-color: #00000000 !important;
-    /* border-top: 1px solid #ffffff12 !important; */
-    border-bottom: 1px solid #ffffff12 !important;
-    padding: 2.5%;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-}
+.card {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    max-height: 500px; /* Set a maximum height for the transition */
+    transition: max-height 0.3s ease-in-out; /* Transition on max-height instead of height */
+    width: 80%;
+    border-bottom: 1px solid white;
+  }
 
-.accordion-body {
-    border-right: 1px solid #ffffff12 !important;
-}
-.accordion-header button{
-    font-size: 75% !important;
-    padding-left: 0px !important;
-}
-ul li{
-    list-style: none;
-}
+  .resume-section{
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .card-body {
+    color: #fff;
+    /* border: 1px solid white; */
+    max-height: 0; /* Set initial max-height to 0 */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Transition on max-height */
+    padding: 0;
+  }
+  .corner-button{
+    bottom: 0px !important;
+    right: 0px !important;
+  }
+  
+  .card-body.d-none {
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .card-body:not(.d-none) {
+    max-height: 500px; /* Set max-height to a sufficient value when not collapsed */
+  }
+  .card-body-wrapper {
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .d-none {
+    max-height: 0;
+  }
+  
+  

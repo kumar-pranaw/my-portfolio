@@ -84,3 +84,27 @@ main {
 .red-color {
   color: #cc2b38;
 }
+.btn-outline-danger{
+  border: #cc2b3842 1px solid;
+  color: #cc2b3c;
+}
+.custom-link{
+  color: #cc2b38;
+  text-decoration: none;
+  margin-top: 5%;
+  margin-bottom: 0px !important;
+  transition-duration: 0.5s;
+}
+.custom-link i{
+  transition-duration: 0.25s;
+}
+.custom-link:hover i{
+  margin-left: 2%;
+  color: white;
+}
+.custom-link:hover{
+  color: white;
+}
+.custom-link:hover .article-card{
+  background-color: #ffffff2a !important;
+}

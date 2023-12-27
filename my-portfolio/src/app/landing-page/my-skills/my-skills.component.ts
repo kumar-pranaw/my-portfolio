@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './my-skills.component.css'
 })
 export class MySkillsComponent {
+  isRotated: boolean = false;
 
+  rotateCard(): void {
+    this.isRotated = !this.isRotated;
+  }
 }

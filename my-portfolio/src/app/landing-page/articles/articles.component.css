@@ -1,0 +1,14 @@
+.article-card{
+    padding: 5%;
+    height: 100%;
+    border: 1px solid #ffffff13;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.my-articles{
+    height: 100vh;
+}

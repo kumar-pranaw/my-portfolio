@@ -1,11 +1,12 @@
 /* Add this to your existing CSS file or create a new one */
 .my-skills-section{
-    height: 100vh;
+    height: auto;
 }
 .card-container {
     perspective: 1000px;
   }
   
+
   .card {
     width: 100%;
     height: 100%;
@@ -57,5 +58,11 @@
     justify-content: center;
     padding: 5%;
     width: 100%;
+  }
+  @media only screen and (max-width:500px){
+    /* .col-sm-6{
+      width: 50%;
+      flex: auto;
+    } */
   }
   

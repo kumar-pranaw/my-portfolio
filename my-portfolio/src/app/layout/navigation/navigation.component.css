@@ -131,6 +131,15 @@ i {
   }
 }
 
+@media only screen and (max-width:1100px){
+ 
+  .link-text {
+    font-size: 75%;
+    text-transform: uppercase;
+  }
+}
+
+
 .dark {
   --text-primary: #cc2b38;
   --text-secondary: #cc2b38;

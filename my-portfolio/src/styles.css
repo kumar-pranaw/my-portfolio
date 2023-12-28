@@ -112,4 +112,15 @@ main {
   main{
     margin-left:0rem ;
   }
+  .section-title{
+    font-size: 150%;
+  }
+}
+@media only screen and (max-width:500px){
+  main{
+    margin-left:0rem ;
+  }
+  .section-title{
+    font-size: 150%;
+  }
 }

@@ -124,3 +124,28 @@ main {
     font-size: 150%;
   }
 }
+
+@font-face {
+  font-family: 'google-sans-regular';
+  src: url(assets/fonts/GoogleSansDisplay-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'google-sans-bold';
+  src: url(assets/fonts/GoogleSansDisplay-Bold.ttf);
+  font-display: swap;
+}
+
+.google-sans-regular{
+  font-family: google-sans-regular;
+}
+
+.google-sans-bold{
+  font-family: google-sans-bold;
+}
+
+
+body{
+  font-family: "google-sans-regular";
+}

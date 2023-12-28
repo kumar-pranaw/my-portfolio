@@ -21,7 +21,9 @@
 i {
   font-size: 25px;
 }
-
+.nav-logo{
+  width: 35%;
+}
 .nav-item {
   width: 100%;
 }
@@ -91,7 +93,7 @@ i {
 }
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -99,7 +101,7 @@ i {
   }
 
   .logo {
-    display: none;
+    display: block;
   }
 
   .navbar-nav {
@@ -111,7 +113,7 @@ i {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .navbar {
     top: 0;
     width: 7.5rem;
@@ -163,4 +165,23 @@ i {
 
 .solar #solarIcon {
   display: block;
+}
+@media only screen and (max-width:800px){
+  .link-text {
+    display: none;
+  }
+  .nav-logo{
+      width: 25%;
+  }
+  .logo{
+    margin-bottom: 0px !important;
+  }
+  .navbar{
+    background-color: #0f0f11;
+    display: flex;
+    align-items: center;
+  }
+  #themeButton{
+    margin-top: 0px;
+  }
 }

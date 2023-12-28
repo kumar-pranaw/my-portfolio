@@ -14,7 +14,7 @@ export class MyResumeComponent {
     { title: 'Hobbies', content: 'Your hobbies content goes here.', isExpanded: false },
     { title: 'Achievements', content: 'Your achievements content goes here.', isExpanded: false }
   ];
-
+  myImage = 'assets/Creatives/webimage.png'
   toggleCard(index: number): void {
     this.resumeSections[index].isExpanded = !this.resumeSections[index].isExpanded;
   }

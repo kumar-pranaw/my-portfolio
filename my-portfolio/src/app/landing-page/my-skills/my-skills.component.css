@@ -23,6 +23,7 @@
   
   .card:hover {
     transform: rotateY(180deg);
+    border: #cc2b3842 1px solid;
   }
   
   .card-body {

@@ -6,25 +6,25 @@ body {
 
 @font-face {
   font-family: 'google-sans-regular';
-  src: url(assets/fonts/GoogleSansDisplay-Regular.ttf);
+  src: url(./assets/fonts/GoogleSansDisplay-Regular.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: 'google-sans-bold';
-  src: url(assets/fonts/GoogleSansDisplay-Bold.ttf);
+  src: url(./assets/fonts/GoogleSansDisplay-Bold.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: 'soul-signature';
-  src: url(assets/fonts/Soul\ Signature.ttf);
+  src: url(./assets/fonts/Soul\ Signature.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: 'incompleta';
-  src: url(assets/fonts/IncompleetaRegular.ttf);
+  src: url(./assets/fonts/IncompleetaRegular.ttf);
   font-display: swap;
 }
 

@@ -42,37 +42,7 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <div class="row mt-5">
-                <div class="col-12">
-                    <p class="section-title">
-                        Personal Details
-                    </p>
-                </div>
-            </div>
-
-            <div class="row" *ngFor="let section of resumeSections; let i = index">
-                <div class="col-12">
-                    <div class="card bg-transparent">
-                        <div class="position-relative">
-                            <div>
-                                <p class="card-title section-title" (click)="toggleCard(i)">
-                                    {{ section.title }}
-                                </p>
-                            </div>
-                            <div class="card-body-wrapper" [ngClass]="{ 'd-none': !section.isExpanded }">
-                                <div class="card-body">
-                                    {{ section.content }}
-                                </div>
-                            </div>
-                            <button class="btn btn-outline-danger position-absolute corner-button m-0 rounded-5"
-                                (click)="toggleCard(i)">
-                                <i class="fa"
-                                    [ngClass]="{ 'fa-plus': !section.isExpanded, 'fa-minus': section.isExpanded }"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img src="{{myImage}}" alt="" srcset="" width="100%">
         </div>
     </div>
 </section>

@@ -9,7 +9,7 @@
     </div>
     <div class="row">
         <div class="col-lg-6">
-            <div class="row mt-5">
+            <div class="row mt-3">
                 <div class="col-12">
                     <p class="section-title">
                         Personal Details
@@ -35,6 +35,37 @@
                                 (click)="toggleCard(i)">
                                 <i class="fa"
                                     [ngClass]="{ 'fa-plus': !section.isExpanded, 'fa-minus': section.isExpanded }"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12">
+                    <p class="section-title">
+                        Professional Details
+                    </p>
+                </div>
+            </div>
+            <div class="row" *ngFor="let section2 of professionalSections; let j = index">
+                <div class="col-12">
+                    <div class="card bg-transparent">
+                        <div class="position-relative">
+                            <div>
+                                <p class="card-title section-title" (click)="toggleCard(j)">
+                                    {{ section2.title }}
+                                </p>
+                            </div>
+                            <div class="card-body-wrapper" [ngClass]="{ 'd-none': !section2.isExpanded }">
+                                <div class="card-body">
+                                    {{ section2.content }}
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-danger position-absolute corner-button m-0 rounded-5"
+                                (click)="toggleCard(j)">
+                                <i class="fa"
+                                    [ngClass]="{ 'fa-plus': !section2.isExpanded, 'fa-minus': section2.isExpanded }"></i>
                             </button>
                         </div>
                     </div>

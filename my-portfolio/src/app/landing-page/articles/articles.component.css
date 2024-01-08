@@ -30,6 +30,20 @@
     background-size: auto;
     background-position: bottom right;
 }
+.category{
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #901822;
+    width: fit-content;
+    padding: 1%;
+    margin-bottom: auto;
+    margin-top: auto;
+    color: white;
+    font-size: 75%;
+    border-radius: 5px;
+    display: flex !important;
+    margin-right: 1%;
+}
 .card-title{
     font-size: 110%;
 }

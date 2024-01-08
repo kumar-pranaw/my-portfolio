@@ -29,19 +29,19 @@ body {
 }
 
 .google-sans-regular {
-  font-family: google-sans-regular;
+  font-family: 'google-sans-regular';
 }
 
 .google-sans-bold {
-  font-family: google-sans-bold;
+  font-family: 'google-sans-bold';
 }
 
 .soul-signature {
-  font-family: soul-signature;
+  font-family: 'soul-signature';
 }
 
 .incompleta {
-  font-family: incompleta;
+  font-family: 'incompleta';
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 
 :root {
   font-size: 16px;
-  font-family: google-sans-regular;
+  font-family: 'google-sans-regular';
 }
 
 body {

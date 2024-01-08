@@ -2,17 +2,33 @@
     padding: 5%;
     height: 100%;
     border: 1px solid #ffffff13;
+    background-image: url('../../../assets/Creatives/card-image-1.png');
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    transition-duration: 0.5s;
+
+}
+
+.col-lg-3:hover .article-card{
+    border: #cc2b387d 1px solid;
+    background-image: url('../../../assets/Creatives/card-image-2.png');
 }
 
 .card-body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
 }
 .my-articles{
     height: 100vh;
     display: flex;
     align-items: center;
+    background-image: url('../../../assets/Creatives/article-bg.png') !important;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom right;
 }
 .card-title{
     font-size: 110%;

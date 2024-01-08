@@ -25,4 +25,9 @@
     overflow: hidden !important;
     text-align: justify;
 }
-
+.events-section{
+    background-image: url('../../../assets/Creatives/speaker-bg.png');
+    background-size: auto;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}

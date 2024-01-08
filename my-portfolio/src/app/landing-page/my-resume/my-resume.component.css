@@ -17,6 +17,10 @@
   .resume-section{
     margin-top: auto;
     margin-bottom: auto;
+    background-image: url('../../../assets//Creatives/backdrop2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
   }
   
   .card-body {

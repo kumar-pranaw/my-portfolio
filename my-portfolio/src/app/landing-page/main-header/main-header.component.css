@@ -1,5 +1,8 @@
 .home-header{
-    height: 100vh;
+   height: 100vh;
+   background-image: url('../../../assets/Creatives/backdrop1.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 .page-sub-heading{
     font-size: 200%;

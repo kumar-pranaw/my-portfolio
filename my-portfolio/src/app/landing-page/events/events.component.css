@@ -1,6 +1,11 @@
 .card {
     border: 1px solid #ffffff15;
     height: 100%;
+    transition-duration: 0.5s;
+}
+
+.card:hover {
+    background-color: #ffffff12 !important;
 }
 
 .event-type {
@@ -13,7 +18,7 @@
 }
 
 
-.card-title{
+.card-title {
     font-size: 115%;
 }
 
@@ -25,7 +30,8 @@
     overflow: hidden !important;
     text-align: justify;
 }
-.events-section{
+
+.events-section {
     background-image: url('../../../assets/Creatives/speaker-bg.png');
     background-size: auto;
     background-position: bottom right;

@@ -62,4 +62,46 @@
     }
   }
   
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
+  .card-body-wrapper {
+    transition: height 0.3s ease-in-out; /* Adjust the duration (0.3s) and timing function (ease-in-out) as needed */
+  }
+  
+  .card-body {
+    overflow: hidden;
+  }
+
+  /* Your component's CSS file */
+
+/* Your component's CSS file */
+
+@keyframes typingAnimation {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+#animatedName {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#firstPart,
+#animatedPart {
+  display: inline-block;
+  animation: typingAnimation 2s forwards; /* Adjust the duration as needed */
+}
+
+#firstPart {
+  animation-delay: 1s; /* Delayed start for sequential effect */
+}

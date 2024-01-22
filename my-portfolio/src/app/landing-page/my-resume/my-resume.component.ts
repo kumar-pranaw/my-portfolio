@@ -10,17 +10,28 @@ import { Component } from '@angular/core';
 })
 export class MyResumeComponent {
   resumeSections = [
-    { title: 'Education', content: 'Your education content goes here.', isExpanded: false },
+    { title: 'Education', content: 'Your education content goes here.', isExpanded: true }, // Open by default
     { title: 'Hobbies', content: 'Your hobbies content goes here.', isExpanded: false },
     { title: 'Achievements', content: 'Your achievements content goes here.', isExpanded: false }
   ];
-    professionalSections = [
-    { title: 'Education', content: 'Your education content goes here.', isExpanded: false },
+
+  professionalSections = [
+    { title: 'Education', content: 'Your education content goes here.', isExpanded: true }, // Open by default
     { title: 'Hobbies', content: 'Your hobbies content goes here.', isExpanded: false },
     { title: 'Achievements', content: 'Your achievements content goes here.', isExpanded: false }
-  ]
-  myImage = 'assets/Creatives/webimage.png'
-  toggleCard(index: number): void {
-    this.resumeSections[index].isExpanded = !this.resumeSections[index].isExpanded;
+  ];
+
+  myImage = 'assets/Creatives/webimage.png';
+
+  toggleCard(index: number, sectionType: string): void {
+    if (sectionType === 'resume') {
+      this.resumeSections.forEach((section, i) => {
+        section.isExpanded = i === index ? !section.isExpanded : false;
+      });
+    } else if (sectionType === 'professional') {
+      this.professionalSections.forEach((section, j) => {
+        section.isExpanded = j === index ? !section.isExpanded : false;
+      });
+    }
   }
 }

@@ -1,12 +1,13 @@
 <section class="home-header d-flex">
-    <div class="container-fluid py-5 d-flex justify-content-center align-items-center">
-        <div>
-           <h1 class="page-title incompleta">
-            PRANAV <span class="red-color">KUMAR</span>
-           </h1>
-           <p class="page-sub-heading google-sans-regular">
-            FULL STACK DEVELOPER
-           </p>
-        </div>
+  <div class="container-fluid py-5 d-flex justify-content-center align-items-center">
+    <div>
+      <h1 class="page-title incompleta" [class.randomizing]="isAnimationInProgress">
+        {{ randomizedTitle }}
+        <!-- <span class="red-color">KUMAR</span> -->
+      </h1>
+      <p class="page-sub-heading google-sans-regular red-color">
+        FULL STACK DEVELOPER
+      </p>
     </div>
+  </div>
 </section>

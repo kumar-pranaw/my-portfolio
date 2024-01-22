@@ -1,79 +1,68 @@
-<section class="py-5 text-white resume-section google-sans-regular">
-    <div class="row">
-        <p class="section-title google-sans-regular">
-            My Resume
-        </p>
-        <p class="section-content">
-            My Academic and Professional Journey So Far
-        </p>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="row mt-3">
-                <div class="col-12">
-                    <p class="section-title">
-                        Personal Details
-                    </p>
-                </div>
-            </div>
+<!-- Your component's HTML file -->
 
-            <div class="row" *ngFor="let section of resumeSections; let i = index">
-                <div class="col-12">
-                    <div class="card bg-transparent">
-                        <div class="position-relative">
-                            <div>
-                                <p class="card-title section-title" (click)="toggleCard(i)">
-                                    {{ section.title }}
-                                </p>
-                            </div>
-                            <div class="card-body-wrapper" [ngClass]="{ 'd-none': !section.isExpanded }">
-                                <div class="card-body">
-                                    {{ section.content }}
-                                </div>
-                            </div>
-                            <button class="btn btn-outline-danger position-absolute corner-button m-0 rounded-5"
-                                (click)="toggleCard(i)">
-                                <i class="fa"
-                                    [ngClass]="{ 'fa-plus': !section.isExpanded, 'fa-minus': section.isExpanded }"></i>
-                            </button>
+<!-- ... (Previous HTML code) ... -->
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="row mt-3">
+            <div class="col-12">
+                <p class="section-title">
+                    Personal Details
+                </p>
+            </div>
+            <!-- Resume Sections -->
+            <div *ngFor="let section of resumeSections; let i = index" class="card bg-transparent mt-3">
+                <div class="position-relative">
+                    <div data-toggle="collapse" [attr.href]="'#resumeSection' + i" role="button"
+                        [attr.aria-expanded]="section.isExpanded ? 'true' : 'false'" aria-controls="resumeSection"
+                        (click)="toggleCard(i, 'resume')">
+                        <p class="card-title section-title">
+                            {{ section.title }}
+                            <i class="fas"
+                                [ngClass]="{'fa-chevron-up': section.isExpanded, 'fa-chevron-down': !section.isExpanded}"></i>
+                        </p>
+                    </div>
+                    <div [ngClass]="{ 'collapse': !section.isExpanded, 'show': section.isExpanded }"
+                        [attr.id]="'resumeSection' + i">
+                        <div class="card-body">
+                            {{ section.content }}
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row mt-3">
-                <div class="col-12">
+            <!-- Professional Sections -->
+            <div class="row mt-5">
+                <div class="col-12 ">
                     <p class="section-title">
                         Professional Details
                     </p>
                 </div>
             </div>
-            <div class="row" *ngFor="let section2 of professionalSections; let j = index">
-                <div class="col-12">
-                    <div class="card bg-transparent">
-                        <div class="position-relative">
-                            <div>
-                                <p class="card-title section-title" (click)="toggleCard(j)">
-                                    {{ section2.title }}
-                                </p>
-                            </div>
-                            <div class="card-body-wrapper" [ngClass]="{ 'd-none': !section2.isExpanded }">
-                                <div class="card-body">
-                                    {{ section2.content }}
-                                </div>
-                            </div>
-                            <button class="btn btn-outline-danger position-absolute corner-button m-0 rounded-5"
-                                (click)="toggleCard(j)">
-                                <i class="fa"
-                                    [ngClass]="{ 'fa-plus': !section2.isExpanded, 'fa-minus': section2.isExpanded }"></i>
-                            </button>
+            <div *ngFor="let section2 of professionalSections; let j = index" class="card bg-transparent mt-3">
+                <div class="position-relative">
+                    <div data-toggle="collapse" [attr.href]="'#professionalSection' + j" role="button"
+                        [attr.aria-expanded]="section2.isExpanded ? 'true' : 'false'"
+                        aria-controls="professionalSection" (click)="toggleCard(j, 'professional')">
+                        <p class="card-title section-title">
+                            {{ section2.title }}
+                            <i class="fas"
+                                [ngClass]="{'fa-chevron-up': section2.isExpanded, 'fa-chevron-down': !section2.isExpanded}"></i>
+                        </p>
+                    </div>
+                    <div [ngClass]="{ 'collapse': !section2.isExpanded, 'show': section2.isExpanded }"
+                        [attr.id]="'professionalSection' + j">
+                        <div class="card-body">
+                            {{ section2.content }}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6">
-            <img src="{{myImage}}" alt="" srcset="" width="100%">
-        </div>
+
     </div>
-</section>
+    <div class="col-lg-6">
+        <!-- Your existing code for the image -->
+        <img src="{{ myImage }}" alt="" srcset="" width="100%">
+    </div>
+</div>

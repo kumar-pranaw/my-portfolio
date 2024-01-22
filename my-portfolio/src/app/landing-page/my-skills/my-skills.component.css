@@ -61,4 +61,8 @@
     width: 100%;
   }
  
-  
+  @media only screen and (max-width:1440px) {
+    .card{
+      height: 250px !important;
+    }
+  }

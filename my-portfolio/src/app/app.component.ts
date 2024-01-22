@@ -5,7 +5,6 @@ import { NavigationComponent } from './layout/navigation/navigation.component'
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 @Component({
   selector: 'app-root',
   standalone: true,

@@ -5,7 +5,7 @@ import { MyTechnicalEventsComponent } from './my-technical-events/my-technical-e
 import { LandingPageComponent } from './landing-page/landing-page.component';
 export const routes: Routes = [
     { path: '', component: LandingPageComponent },
-    { path: 'skills', component: MyTechnicalEventsComponent },
+    { path: 'events', component: MyTechnicalEventsComponent },
     { path: 'projects', component: MyProjectsComponent },
-    { path: 'articles', component: MyArticlesComponent }
+    { path: 'articles', component: MyArticlesComponent },
 ];

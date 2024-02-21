@@ -1,0 +1,39 @@
+.card {
+    border: 1px solid #ffffff15;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+
+.card:hover {
+    background-color: #ffffff12 !important;
+}
+
+.event-type {
+    background-color: #cc2b38;
+    width: fit-content;
+    padding: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 3px;
+}
+
+
+.card-title {
+    font-size: 115%;
+}
+
+.card-text {
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    display: -webkit-box !important;
+    margin-bottom: 2%;
+    overflow: hidden !important;
+    text-align: justify;
+}
+
+.events-section {
+    background-image: url('../../assets/Creatives/speaker-bg.png');
+    background-size: auto;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}

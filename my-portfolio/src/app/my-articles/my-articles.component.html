@@ -1,1 +1,34 @@
-<p>my-articles works!</p>
+<main>
+    <section class="my-articles google-sans-regular py-3 h-auto">
+        <div class="container-fluid">
+          <div class="row">
+            <p class="section-title article-title">
+              My Articles
+            </p>
+            <p class="section-content">
+              Somethings I Like To Talk About
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4" *ngFor="let item of rssFeedItems">
+              <div class="card bg-transparent article-card">
+                <!-- <img class="card-img-top" [src]="item.thumbnail" alt="{{ item.title }}" width="100%"> -->
+                <div class="card-body">
+                  <p class="card-title">{{ item.title }}</p>
+      
+                  <!-- Display Categories -->
+                  <div class="d-flex flex-wrap">
+                    <div class="category mt-2 p-1" *ngFor="let category of item.categories">
+                      {{ category }}
+                    </div>
+                  </div>
+      
+                  <a href="{{ item.link }}" class="custom-link" target="_blank">Read More <i
+                      class="fa fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</main>

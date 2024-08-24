@@ -16,7 +16,7 @@
                     <div data-toggle="collapse" [attr.href]="'#resumeSection' + i" role="button"
                         [attr.aria-expanded]="section.isExpanded ? 'true' : 'false'" aria-controls="resumeSection"
                         (click)="toggleCard(i, 'resume')">
-                        <p class="card-title section-title">
+                        <p class="card-title fs-6 section-title">
                             {{ section.title }}
                             <i class="fas"
                                 [ngClass]="{'fa-chevron-up': section.isExpanded, 'fa-chevron-down': !section.isExpanded}"></i>
@@ -44,7 +44,7 @@
                     <div data-toggle="collapse" [attr.href]="'#professionalSection' + j" role="button"
                         [attr.aria-expanded]="section2.isExpanded ? 'true' : 'false'"
                         aria-controls="professionalSection" (click)="toggleCard(j, 'professional')">
-                        <p class="card-title section-title">
+                        <p class="card-title section-title fs-6">
                             {{ section2.title }}
                             <i class="fas"
                                 [ngClass]="{'fa-chevron-up': section2.isExpanded, 'fa-chevron-down': !section2.isExpanded}"></i>
@@ -64,5 +64,27 @@
     <div class="col-lg-6">
         <!-- Your existing code for the image -->
         <img src="{{ myImage }}" alt="" srcset="" width="100%">
+        <div class="row">
+            <div class="col-6">
+                <div class="bg-transparent rounded text-center p-3" style="border:1px solid #ffffff">
+                    <div class="red-color fs-3 google-sans-bold">
+                        {{ yearsOfExperience }}
+                    </div>
+                    <div class="text-white google-sans-regular red-color">
+                    Years of Experience
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="bg-transparent rounded border-2 border-white text-center p-3" style="border:1px solid #ffffff">
+                    <div class="fs-3 red-color google-sans-bold">
+                        100+
+                    </div>
+                    <div class="text-white google-sans-regular red-color">
+                    Projects Completed
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

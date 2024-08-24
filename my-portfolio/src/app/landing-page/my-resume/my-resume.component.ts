@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-my-resume',
@@ -9,6 +9,23 @@ import { Component } from '@angular/core';
   styleUrl: './my-resume.component.css'
 })
 export class MyResumeComponent {
+
+  yearsOfExperience: number = 0;
+  startDate: Date = new Date('2017-01-01'); // Start date: 1 Jan 2017
+
+  ngOnInit(): void {
+    this.calculateYearsOfExperience();
+  }
+
+  calculateYearsOfExperience(): void {
+    const currentDate = new Date();
+    const timeDiff = currentDate.getTime() - this.startDate.getTime();
+    this.yearsOfExperience = Math.floor(timeDiff / (1000 * 3600 * 24 * 365.25)); // Calculate the number of years
+  }
+
+
+
+
   resumeSections = [
     {
       title: 'Doctor of Philosophy (PhD)',
@@ -93,7 +110,7 @@ export class MyResumeComponent {
     }
   ];
 
-  myImage = 'assets/Creatives/webimage.png';
+  myImage = 'assets/Creatives/clipart2.png';
 
   toggleCard(index: number, sectionType: string): void {
     if (sectionType === 'resume') {

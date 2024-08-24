@@ -1,0 +1,29 @@
+<main>
+    <section class="contact-part google-sans-regular py-3 h-auto">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <p class="section-title article-title h4 font-weight-bold">
+              Connect With Me
+            </p>
+            <p class="section-content mb-4">
+              Let's connect and create great things together
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div *ngFor="let media of socialMedia" class="col-md-4 mb-3">
+            <div class="card border border-opacity-50">
+              <div class="card-body d-flex align-items-center">
+                <a [href]="media.url" target="_blank" class="text-decoration-none text-white d-flex align-items-center gap-2">
+                  <i [class]="media.icon + ' fa-2x mr-3'"></i>
+                  <span class="card-text">{{ media.name }}</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  

@@ -1,0 +1,10 @@
+.contact-part{
+    background-image: url('../../assets/Creatives/contact-bg.png');
+    min-height: 100vh;
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.card{
+    background-color: #0f0f11;
+}

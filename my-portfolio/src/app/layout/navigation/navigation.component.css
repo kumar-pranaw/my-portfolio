@@ -232,3 +232,24 @@ i {
   display: block;
   height: auto; /* Set height to auto on hover */
 }
+@media only screen and (max-width: 600px) {
+  .dropdown-content {
+    top: auto;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-primary);
+    transition: height 0.5s ease;
+  }
+
+  .dropdown:hover .dropdown-content,
+  .dropdown-content.show {
+    display: block;
+    height: auto;
+  }
+  .nav-item:last-child {
+    margin-top:0px ;
+
+  }
+}
